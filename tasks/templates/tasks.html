@@ -12,9 +12,9 @@
                 <a class="list-group-item" href="{% url 'task_detail' task.id %}">
                         <heaer class="d-flex justify-content-between">
                             {% if task.important %}
-                            <h1 class="fw-bold text-success">{{task.title}}</h1>
+                            <h1 class="fw-bold text-warning">{{task.title}}</h1>
                             {% else %}
-                            <h1 class="fw-bold text-Info">{{task.title}}</h1>
+                            <h1 class="fw-bold text-info">{{task.title}}</h1>
                             {% endif %}
                             <p>{{task.user.username}}</p>
                         </heaer>
